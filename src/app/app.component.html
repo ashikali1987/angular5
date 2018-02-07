@@ -1,0 +1,42 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <div app-header></div>
+  <h1>Welcome to {{ title }}!</h1>
+    <table>
+      <tr *ngFor="let profile of profileName">
+          <td>{{ profile.id }}</td>
+          <td>{{ profile.name }}</td>
+          <td>{{ profile.age }}</td>
+      </tr>
+    </table>
+  
+
+
+
+  <!-- <table width="1000" align="center">
+    <tr>
+      <td width="500"><h1>Binding</h1></td>
+      <td><h1>Directive</h1></td>
+    </tr>
+    <tr>
+      <td>
+        <app-interpolation></app-interpolation> <hr>
+        <app-property-binding></app-property-binding>  <hr>
+        <app-class-binding></app-class-binding> <hr>
+
+        <app-style-binding></app-style-binding> <hr>
+        <app-event-binding></app-event-binding> <hr>
+        <app-template-reference-variable></app-template-reference-variable> <hr>
+        <app-two-way-binding></app-two-way-binding>
+      </td>
+      <td>
+          <app-ng-if></app-ng-if>
+          <app-interaction (childData)="message=$event" [parentData]="parentName"></app-interaction>
+          <h4>{{ message }}</h4>
+          <app-pipes></app-pipes>
+          <app-employee-list></app-employee-list>
+          <app-employee-details></app-employee-details>
+      </td>
+    </tr>
+  </table> -->
+</div>
